@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Поспеши</title>
+		<link href="css/style.css"  rel="stylesheet">
+		<script src="js/Clock.js">
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="leftS">
+				<ul>
+					<li>
+						<a href="">
+							<img src="css/img/inst.png">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="css/img/fb.png">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="css/img/vk.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="middleS">
+				<a href=""><img src="css/img/logo.png"></a>
+			</div>
+			<div class="rightS">
+				<a href=""><img src="css/img/num.png"></a>
+			</div>
+		</div>
+		<div class="Mcontent">
+			<div class="conteiner1">
+				
+				<h1>
+					РАСПРОДАЖА ОБОРУДОВАНИЯ
+				</h1>
+				<h3>
+					Ликвидируем складские остатки!
+				</h3>
+				<h2>
+					Торопитесь зафиксировать за собой минимальную цену!
+				</h2>
+				<a><button onclick="add()">
+					Зафиксировать цену
+				</button></a>
+			</div>
+			<div class="conteiner" >                                                   <! Timer>
+				<h1>
+					Предложение действительно до 31.12.19
+				</h1>
+				<h3>
+					До завершения осталось:
+				</h3>
+				<div class="timer" >
+					<div class="FT">
+						<p>
+							ДНЕЙ
+						</p>
+						<div class="num">
+							<p id="D">1</p>
+						</div>
+					</div>
+					<div class="FT">
+						<p>
+							ЧАСОВ
+						</p>
+						<div class="num">
+							<p id="H">1</p>
+						</div>
+					</div>
+					<div class="FT">
+						<p>
+							МИНУТ
+						</p>
+						<div class="num" >
+							<p id="m">1</p>
+						</div>
+					</div>	
+				</div>
+				<script>
+				timer(11,31,60,60);
+				</script>
+			</div>
+			<div class="conteiner">
+				<h1>
+					Торопитесь! Количество оборудования ограничено!
+				</h1>
+				<h3>
+					с 01.01.2020 цены на оборудование повышаются!
+				</h3>
+				<div class="Lblock">
+					<ul>
+						<li>
+							<div class="num" >
+								<form name="hum">
+									<input type="text" name="cl" readonly value=0>
+								</form>	
+								<script>
+									function add()
+										{
+											var a=+document.hum.cl.value;
+											a=a+1;
+											document.hum.cl.value=a;
+										}
+							</script>	
+							</div>
+							
+						</li>
+						<li>
+							<div class="tx">
+								<p>
+									Человек уже забронировали за собой минимальную стоимость
+								</p>
+							</div>	
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="conteiner">
+				<h1>
+					Одна из наших работ:
+				</h1>
+				<h3>
+					Это коммерческое предложение от Наших конкурентов
+				</h3>
+				<img src="css/img/img_1.png">
+				<h3>
+					А это наше:
+				</h3>
+				<img src="css/img/img_2.png">
+			</div>
+			<div class="conteiner2">
+				<div class="Ltx">
+					<h3>
+						Конкуренты предлагали:
+					</h3>
+				</div>
+				<div class="Rtx">
+					<h1 style="color:red">
+						506 503 р.
+					</h1>
+				</div>
+				</br>
+				<div class="Ltx">
+					<h3>
+						Мы доставили оборудование за:
+					</h3>
+				</div>
+				<div class="Rtx">
+					<h1>
+						378 570 р.
+					</h1>
+				</div>
+				</br>
+				<div class="Ltx">
+					<h3>
+						Выгода клиента составила:
+					</h3>
+				</div>
+				<div class="Rtx">
+					<h1>
+						127 933 р.
+					</h1>
+				</div>
+			</div>
+			<div class="conteiner">
+				<button onclick="add()">Хочу так же!</button>
+			</div>
+			<div class="conteiner3">
+			<div class="M">
+					<h1>
+						Мы поставляем весь спектр оборудования для предприятий общественного питания
+					</h1>
+				<div class="slot">
+					<a href=""><img src="css/img/img.png"></a>
+					<hr>
+					<a href=""><p>Холодильные камеры</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-2.png"></a>
+					<hr>
+					<a href=""><p>Холодильные моноблоки</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-3.png"></a>
+					<hr>
+					<a href=""><p>Холодильные сплит-системы</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-4.png"></a>
+					<hr>
+					<a href=""><p>Холодильные витрины</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-5.png"></a>
+					<hr>
+					<a href=""><p>Шкафы холодильные</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-6.png"></a>
+					<hr>
+					<a href=""><p>Столы холодильные</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-7.png"></a>
+					<hr>
+					<a href=""><p>Сковороды опрокидывающиеся</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-8.png"></a>
+					<hr>
+					<a href=""><p>Плиты электрические</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-9.png"></a>
+					<hr>
+					<a href=""><p>Печи конвекционные</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-10.png"></a>
+					<hr>
+					<a href=""><p>Паро конвектоматы</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-11.png"></a>
+					</br>
+					<hr>
+					<a href=""><p>Линии раздачи</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-12.png"></a>
+					</br>
+					<hr>
+					
+					<a href=""><p>Мясорубки</p></a>
+					
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-13.png"></a>
+					<hr>
+					<a href=""><p>Фритюрницы</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-14.png"></a>
+					<hr>
+					<a href=""><p>Тестомесы</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-15.png"></a>
+					<hr>
+					<a href=""><p>Пицца-печи</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-16.png"></a>
+					<hr>
+					<a href=""><p>Шкафы жарочные</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-17.png"></a>
+					<hr>
+					<a href=""><p>Шкафы пекарские</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-18.png"></a>
+					<hr>
+					<a href=""><p>Котлы пищеварочные</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-19.png"></a>
+					<hr>
+					<a href=""><p>Кипятильники </p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-20.png"></a>
+					<hr>
+					<a href=""><p>Картофелечистки</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-21.png"></a>
+					<hr>
+					<a href=""><p>Нейтральное оборудование</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-22.png"></a>
+					<hr>
+					<a href=""><p>Весовое оборудование</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-23.png"></a>
+					<hr>
+					<a href=""><p>Прачечное оборудование</p></a>
+				</div>
+				<div class="slot">
+					<a href=""><img src="css/img/img-24.png"></a>
+					<hr>
+					<a href=""><p>Посудомоечное оборудование</p></a>
+				</div>
+				
+				
+			</div>
+				<a href=""><img src="css/img/A.png"></a>
+			</div>
+				
+			<div class="conteiner">
+				<h1>
+					Не упустите момент! Забронируйте за собой максимальную выгоду!
+				</h1>
+				<button onclick="add()">Забронировать</button>
+				<h3>
+					с 01.01.2020 цены на оборудование повышаются!
+				</h3>
+				
+			</div>
+		</div>
+		
+		<div class="footer">
+		<div class="leftS">
+				<ul>
+					<li>
+						<a href="">
+							<img src="css/img/inst.png">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="css/img/fb.png">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="css/img/vk.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="middleS">
+				<a href=""><img src="css/img/logo.png"></a>
+			</div>
+			<div class="rightS">
+				<a href=""><img src="css/img/num.png"></a>
+			</div>
+			</br>
+			<div class="fin">
+				<h3>
+					ООО "ХолодТехСервис" г.Тюмень ул. 50 лет Октября 120 оф. 14 ИНН: 7203248673
+				</h3>
+			</div>
+		</div>
+	</body>
+</html>
